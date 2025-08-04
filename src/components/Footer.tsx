@@ -101,7 +101,7 @@ export const Footer: React.FC = () => {
                   <Mail className="h-5 w-5 text-[#05ccc2] group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <span className="text-sm group-hover:underline group-hover:underline-offset-4">
-                  mr.muh382745@gmail.com
+                  webifyra@gmail.com
                 </span>
               </a>
             </div>
