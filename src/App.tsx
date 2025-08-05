@@ -11,7 +11,6 @@ import { MetaAdsPage } from './pages/services/MetaAdsPage';
 import { SocialMediaPage } from './pages/services/SocialMediaPage';
 import { WebDevelopmentPage } from './pages/services/WebDevelopmentPage';
 import { UGCContentPage } from './pages/services/UGCContentPage';
-import { VoiceAssistantWidget } from './components/VoiceAssistantWidget';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -61,7 +60,6 @@ function App() {
               <Footer />
             </div>
           </Router>
-          <VoiceAssistantWidget />
         </motion.div>
       )}
     </>
