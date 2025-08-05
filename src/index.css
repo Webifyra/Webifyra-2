@@ -52,6 +52,23 @@
   .h-10\.5 {
     height: 42px;
   }
+  
+  /* Voice Assistant Widget Responsive Styles */
+  @media (max-width: 640px) {
+    .voice-widget {
+      bottom: 1rem;
+      right: 1rem;
+      max-width: 280px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .voice-widget {
+      bottom: 0.75rem;
+      right: 0.75rem;
+      max-width: 260px;
+    }
+  }
 }
 
 .scroll-smooth {
