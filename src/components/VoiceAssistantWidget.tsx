@@ -1,29 +1,22 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+<vapi-widget
+  public-key="20c12a99-d3b6-4ff0-afcc-b4f1de10ff65"
+  assistant-id="f14580aa-0773-436a-a705-0d629cce0f04"
+  mode="voice"
+  theme="dark"
+  base-bg-color="#000000"
+  accent-color="#05ccc2"
+  cta-button-color="#000000"
+  cta-button-text-color="#ffffff"
+  border-radius="large"
+  size="compact"
+  position="bottom-right"
+  title="Get Call"
+  start-button-text="Start"
+  end-button-text="End Call"
+  chat-first-message="Hey, How can I help you today?"
+  chat-placeholder="Type your message..."
+  voice-show-transcript="true"
+  consent-required="false"
+></vapi-widget>
 
-export const VoiceAssistantWidget: React.FC = () => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8, y: 20 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      transition={{ delay: 2, duration: 0.5, ease: "easeOut" }}
-      className="fixed bottom-6 right-6 z-50 voice-widget"
-    >
-      <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden max-w-sm">
-        {/* Support Label */}
-        <div className="bg-[#022877] px-4 py-2 text-center">
-          <span className="text-white font-bold text-sm tracking-wide">
-            24/7 Support
-          </span>
-        </div>
-        
-        {/* Voice Agent Container */}
-        <div className="p-4 bg-gradient-to-br from-gray-50 to-white">
-          <div className="rounded-xl overflow-hidden bg-white shadow-inner border border-gray-100">
-            <elevenlabs-convai agent-id="agent_8701k1v46r6pf2tsfyd40tx8aqt5"></elevenlabs-convai>
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
-};
+<script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
