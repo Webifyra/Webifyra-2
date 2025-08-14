@@ -19,7 +19,7 @@
     <vapi-widget
       public-key="20c12a99-d3b6-4ff0-afcc-b4f1de10ff65"
       assistant-id="f14580aa-0773-436a-a705-0d629cce0f04"
-      mode="text-and-voice"
+      mode="voice"
       theme="dark"
       base-bg-color="#000000"
       accent-color="#14B8A6"
@@ -28,28 +28,15 @@
       border-radius="large"
       size="compact"
       position="bottom-right"
-      title="Get Call"
+      title="Get Cal"
       start-button-text="Start"
       end-button-text="End Call"
       chat-first-message="Hey, How can I help you today?"
       chat-placeholder="Type your message..."
       voice-show-transcript="true"
       consent-required="false"
-      show-public-key-invalid-message="true"
-      show-public-key-invalid-message-classname="vapi-error-message"
     ></vapi-widget>
     
-    <script>
-      // Add error handling for Vapi widget
-      window.addEventListener('error', function(e) {
-        if (e.message && e.message.includes('Vapi')) {
-          console.warn('Vapi widget error handled:', e.message);
-          // Prevent the error from breaking the page
-          e.preventDefault();
-          return false;
-        }
-      });
-    </script>
-    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript" onerror="console.warn('Failed to load Vapi widget')"></script>
+    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
   </body>
 </html>
